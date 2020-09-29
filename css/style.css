@@ -171,7 +171,7 @@ body {
   border-radius: 15px;
   text-align: center; }
   .box:last-child {
-    background-color: #dddcdc; }
+    background-color: #F4F4F4; }
 
 .calculator {
   position: absolute; }
@@ -318,13 +318,21 @@ main {
   display: inherit; }
 
 .secondary-info--texts {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
-
-.box {
-  flex: 1 0 auto; }
+  align-items: center; }
+  .secondary-info--texts .box {
+    padding: 17px 0; }
+    .secondary-info--texts .box p {
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.048px; }
+      .secondary-info--texts .box p:last-child {
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.072px; }
 
 .present {
   position: relative;
@@ -354,7 +362,8 @@ main {
 .step {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   .step:nth-child(2) img {
     height: 193px; }
 
@@ -491,6 +500,12 @@ main {
     align-items: center; }
     .footer .footerCol .socials--icons {
       color: #EF2221; }
+  .secondary-info--texts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .secondary-info--texts :last-child {
+      grid-column: 1 / 3;
+      background-color: white; }
   .footerCols {
     display: flex;
     flex-direction: row;
