@@ -1,8 +1,14 @@
+.navbar .navbar-toggler-icon .navbar-toggler-right {
+    background-image: url("img/burger.svg");
+}
+
 .view {
     background: url(../img/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    padding-bottom: 200px;
+    position: relative;
 }
 
 .links {
@@ -84,6 +90,11 @@
         background-color: rgb(221, 220, 220);
         ;
     }
+}
+
+.calculator {
+    // width: 100%;
+    position: absolute;
 }
 
 .calculator-band {

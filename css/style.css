@@ -6,7 +6,7 @@
 
 body {
   margin: 0 auto !important;
-  background-color: #fdf9f9 !important; }
+  background: #FFFFFF; }
 
 li {
   list-style: none; }
@@ -88,7 +88,6 @@ body {
 
 .footer .footerCol .extra-info {
   display: flex;
-  flex: 1 0 auto;
   justify-content: start;
   align-items: center;
   padding: 23px 29px;
@@ -106,11 +105,16 @@ body {
     line-height: 18px;
     letter-spacing: 0.056px; }
 
+.navbar .navbar-toggler-icon .navbar-toggler-right {
+  background-image: url("img/burger.svg"); }
+
 .view {
   background: url(../img/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  padding-bottom: 200px;
+  position: relative; }
 
 .links {
   font-size: 14px;
@@ -169,6 +173,9 @@ body {
   .box:last-child {
     background-color: #dddcdc; }
 
+.calculator {
+  position: absolute; }
+
 .calculator-band {
   background-color: white;
   border-radius: 15px;
@@ -223,6 +230,10 @@ body {
 .primary {
   margin-top: 55px; }
 
+.fa-phone {
+  color: #4F4F4F;
+  margin-right: 5px; }
+
 .links {
   display: flex; }
   .links li a {
@@ -276,17 +287,22 @@ main {
   align-items: center;
   flex-direction: column; }
   .advantages--box {
+    background: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 45px;
+    padding: 0 38px;
     padding-bottom: 0;
-    height: 300px;
-    width: 300px;
-    border-radius: 1200px;
-    border: 1px solid black; }
+    width: 369px;
+    height: 369px;
+    border-radius: 100%;
+    border: 1px solid #979797; }
     .advantages--box:first-child {
-      left: 10% !important; }
+      transform: translateY(10%); }
+    .advantages--box:nth-child(2) {
+      z-index: 1; }
+    .advantages--box:nth-child(3) {
+      transform: translateY(-10%); }
 
 .main-info p {
   border-bottom: 0.8px solid #aca8a8;
@@ -447,6 +463,8 @@ main {
   margin: 70px 0; }
 
 @media only screen and (max-width: 768px) {
+  main {
+    margin-top: 305px; }
   .main-info p {
     display: flex;
     justify-content: space-between; }
@@ -485,6 +503,8 @@ main {
       flex: 4; } }
 
 @media only screen and (min-width: 768px) {
+  main {
+    margin-top: 195px; }
   .header-imgs {
     display: flex;
     justify-content: space-around; }
@@ -494,11 +514,32 @@ main {
       flex-direction: row; }
       .header-imgs--right img:first-child {
         margin-right: 18px; }
+  .finance {
+    position: relative; }
   .advantages {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row; }
+    flex-direction: row;
+    position: relative; }
+    .advantages--box h1 {
+      font-size: 40px;
+      line-height: 45px;
+      font-weight: 200px; }
+      .advantages--box h1 span {
+        font-size: 100px;
+        line-height: 112px; }
+    .advantages--box p {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.056px; }
+    .advantages--box:first-child {
+      transform: translateX(10%); }
+    .advantages--box:nth-child(2) {
+      z-index: 1; }
+    .advantages--box:nth-child(3) {
+      transform: translateX(-10%); }
   hr {
     margin: 0 20px;
     border: 1px solid #DBDBDB; }
