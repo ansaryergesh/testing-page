@@ -5,6 +5,12 @@
     background-position: center center;
 }
 
+.links {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.056px;
+}
+
 .logo {
     color: $main-color !important;
     font-size: 25px;
@@ -42,7 +48,11 @@
 
 .phone-numbers {
     // display: flex;
-    color: grey;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.08px;
+
+    color: #929292;
     display: none !important;
 
     li {

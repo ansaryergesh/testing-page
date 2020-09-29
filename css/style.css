@@ -88,13 +88,15 @@ body {
 
 .footer .footerCol .extra-info {
   display: flex;
+  flex: 1 0 auto;
   justify-content: start;
   align-items: center;
   padding: 23px 29px;
   border: 1px solid #DEDEDE;
   border-radius: 15px;
   transition: .3s;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 15px; }
   .footer .footerCol .extra-info:hover {
     background-color: #f2f2f2; }
   .footer .footerCol .extra-info p {
@@ -109,6 +111,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
+
+.links {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.056px; }
 
 .logo {
   color: #EF2221 !important;
@@ -137,7 +144,10 @@ body {
   color: red !important; }
 
 .phone-numbers {
-  color: grey;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.08px;
+  color: #929292;
   display: none !important; }
   .phone-numbers li {
     margin-left: 25px; }
@@ -298,7 +308,7 @@ main {
   flex-wrap: wrap; }
 
 .box {
-  flex: 1 0 50px; }
+  flex: 1 0 auto; }
 
 .present {
   position: relative;
@@ -440,6 +450,10 @@ main {
   .main-info p {
     display: flex;
     justify-content: space-between; }
+  .header-imgs img:first-child {
+    margin-right: 15px; }
+  .header-imgs--right img:last-child {
+    margin-bottom: 21px; }
   .bottom-banner {
     display: none; }
   .present:nth-child(2) .content {
@@ -458,18 +472,28 @@ main {
     justify-content: start;
     align-items: center; }
     .footer .footerCol .socials--icons {
-      color: #EF2221; } }
+      color: #EF2221; }
+  .footerCols {
+    display: flex;
+    flex-direction: row;
+    justify-content: start; }
+    .footerCols:after, .footerCols:before {
+      display: flex; }
+    .footerCols .footerCol:nth-child(5) {
+      flex: 3; }
+    .footerCols .footerCol:nth-child(6) {
+      flex: 4; } }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    padding: 0 5% !important; }
   .header-imgs {
     display: flex;
     justify-content: space-around; }
     .header-imgs--right {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-direction: row; }
+      .header-imgs--right img:first-child {
+        margin-right: 18px; }
   .advantages {
     display: flex;
     justify-content: center;
