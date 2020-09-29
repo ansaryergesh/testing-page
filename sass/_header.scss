@@ -1,0 +1,140 @@
+.view {
+    background: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo {
+    color: $main-color !important;
+    font-size: 25px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+
+    letter-spacing: 0.12px;
+}
+
+.header-text {
+    justify-content: space-around;
+}
+
+.header-imgs {
+    display: flex;
+    justify-content: space-between;
+
+    &--right {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.secondary-header {
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 0.16px;
+}
+
+
+.burger {
+    color: red !important;
+}
+
+.phone-numbers {
+    // display: flex;
+    color: grey;
+    display: none !important;
+
+    li {
+        margin-left: 25px;
+
+        .fa-whatsapp {
+            color: green !important;
+            margin-right: 5px
+        }
+
+        b {
+            color: black
+        }
+    }
+}
+
+.main-info p {
+    padding: 0 25px;
+}
+
+.box {
+    border: .2px solid rgb(221, 220, 220);
+    padding: 10px 18px;
+    padding-bottom: 0;
+    border-radius: 15px;
+    text-align: center;
+
+    &:last-child {
+        background-color: rgb(221, 220, 220);
+        ;
+    }
+}
+
+.calculator-band {
+    background-color: white;
+    border-radius: 15px;
+
+    padding: 40px 25px;
+    -webkit-box-shadow: 12px 47px 59px -22px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 12px 47px 59px -22px rgba(0, 0, 0, 0.3);
+    box-shadow: 12px 47px 59px -22px rgba(0, 0, 0, 0.3);
+
+    .takebtn {
+        border: none;
+        background-color: $main-color;
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-radius: 15px;
+    }
+}
+
+.calculator {
+    .texts {
+        display: none !important;
+    }
+}
+
+.money-progress {
+    height: .5rem;
+    width: 100%;
+    background-color: #EAEAEA;
+    border-radius: 4px;
+
+}
+
+.money-progress .bar {
+    height: 100%;
+    background-color: rgb(216, 213, 213);
+    border-radius: 4px;
+}
+
+#money-progress-handle {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin-top: -5px;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D3D5DF;
+    border-top-color: #D3D5DF;
+    border-right-color: #D3D5DF;
+    transform: rotate(45deg);
+    border-radius: 100%;
+    background-color: $main-color;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.draggable {
+    float: left;
+    margin: 0 10px 10px 0;
+}

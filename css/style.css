@@ -8,6 +8,12 @@ body {
   margin: 0 auto !important;
   background-color: #fdf9f9 !important; }
 
+li {
+  list-style: none; }
+
+i {
+  cursor: pointer; }
+
 p {
   font-family: "AvenirNext" !important; }
 
@@ -43,8 +49,89 @@ body {
   .view {
     height: 650px; } }
 
-li {
-  list-style: none; }
+.footer .footerCol p {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.044px; }
+
+.footer .footerCol .lists {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 0.056px; }
+  .footer .footerCol .lists a {
+    display: flex;
+    flex-direction: column; }
+  .footer .footerCol .lists p {
+    font-size: 12px;
+    line-height: 0;
+    letter-spacing: 0.048px; }
+
+.footer .footerCol .socials p {
+  margin-right: 20px; }
+
+.footer .footerCol .socials--icons {
+  color: #EF2221;
+  font-size: 20px; }
+  .footer .footerCol .socials--icons i {
+    width: 47px;
+    height: 47px;
+    border: 1px solid #EF2221;
+    border-radius: 100%; }
+    .footer .footerCol .socials--icons i:first-child {
+      padding: 15px;
+      padding-bottom: 17px;
+      padding-top: 15px; }
+    .footer .footerCol .socials--icons i:last-child {
+      font-size: 21px;
+      padding: 13px; }
+
+.footer .footerCol .extra-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 23px 29px;
+  border: 1px solid #DEDEDE;
+  border-radius: 15px;
+  transition: .3s;
+  cursor: pointer; }
+  .footer .footerCol .extra-info:hover {
+    background-color: #f2f2f2; }
+  .footer .footerCol .extra-info p {
+    color: #000000;
+    margin-left: 29px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.056px; }
+
+.view {
+  background: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.logo {
+  color: #EF2221 !important;
+  font-size: 25px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.12px; }
+
+.header-text {
+  justify-content: space-around; }
+
+.header-imgs {
+  display: flex;
+  justify-content: space-between; }
+  .header-imgs--right {
+    display: flex;
+    flex-direction: column-reverse; }
+
+.secondary-header {
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.16px; }
 
 .burger {
   color: red !important; }
@@ -91,10 +178,37 @@ li {
 .calculator .texts {
   display: none !important; }
 
-.logo {
-  color: #EF2221 !important;
-  font-size: 25px;
-  font-weight: bold; }
+.money-progress {
+  height: .5rem;
+  width: 100%;
+  background-color: #EAEAEA;
+  border-radius: 4px; }
+
+.money-progress .bar {
+  height: 100%;
+  background-color: #d8d5d5;
+  border-radius: 4px; }
+
+#money-progress-handle {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  margin-top: -5px;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #D3D5DF;
+  border-top-color: #D3D5DF;
+  border-right-color: #D3D5DF;
+  transform: rotate(45deg);
+  border-radius: 100%;
+  background-color: #EF2221;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+
+.draggable {
+  float: left;
+  margin: 0 10px 10px 0; }
 
 .primary {
   margin-top: 55px; }
@@ -108,11 +222,6 @@ li {
 
 .secondary-info .head-p {
   display: none; }
-
-.secondary-header {
-  font-size: 40px;
-  line-height: 45px;
-  letter-spacing: 0.16px; }
 
 .secondary-red {
   color: #EF2221 !important; }
@@ -149,46 +258,6 @@ main {
 
 .info {
   display: block; }
-
-.header-text {
-  justify-content: space-around; }
-
-.header-imgs {
-  display: flex;
-  justify-content: space-between; }
-  .header-imgs--right {
-    display: flex;
-    flex-direction: column-reverse; }
-
-.money-progress {
-  height: .5rem;
-  width: 100%;
-  background-color: #e4dede; }
-
-.money-progress .bar {
-  height: 100%;
-  background-color: #a7a4a4; }
-
-#money-progress-handle {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  margin-top: -5px;
-  margin-left: -10px;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #D3D5DF;
-  border-top-color: #D3D5DF;
-  border-right-color: #D3D5DF;
-  transform: rotate(45deg);
-  border-radius: 100%;
-  background-color: #EF2221;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer; }
-
-.draggable {
-  float: left;
-  margin: 0 10px 10px 0; }
 
 .advantages {
   margin-top: 55px;
@@ -367,24 +436,6 @@ main {
 .bottom-banner--text {
   margin: 70px 0; }
 
-.footer .footerCol p {
-  font-size: 11px;
-  line-height: 14px;
-  letter-spacing: 0.044px; }
-
-.footer .footerCol .lists {
-  font-size: 14px;
-  line-height: 30px;
-  text-align: left;
-  letter-spacing: 0.056px; }
-  .footer .footerCol .lists a {
-    display: flex;
-    flex-direction: column; }
-  .footer .footerCol .lists p {
-    font-size: 12px;
-    line-height: 5px;
-    letter-spacing: 0.048px; }
-
 @media only screen and (max-width: 768px) {
   .main-info p {
     display: flex;
@@ -401,9 +452,17 @@ main {
     .whyus-footer .whyus--little {
       font-size: 24px !important; }
   .stepmoney .rounded button {
-    border-radius: 30px; } }
+    border-radius: 30px; }
+  .footer .footerCol .socials {
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+    .footer .footerCol .socials--icons {
+      color: #EF2221; } }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 5% !important; }
   .header-imgs {
     display: flex;
     justify-content: space-around; }
