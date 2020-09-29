@@ -1,5 +1,9 @@
 @import "base";
-$main-color: red;
+@import url("../fonts.css");
+$main-color: #EF2221;
+
+
+
 
 li {
     list-style: none;
@@ -54,7 +58,7 @@ li {
     -moz-box-shadow: 12px 47px 59px -22px rgba(0, 0, 0, 0.3);
     box-shadow: 12px 47px 59px -22px rgba(0, 0, 0, 0.3);
 
-    button {
+    .takebtn {
         border: none;
         background-color: $main-color;
         color: white;
@@ -91,8 +95,14 @@ li {
     }
 }
 
-.secondary-info p {
+.secondary-info .head-p {
     display: none;
+}
+
+.secondary-header {
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 0.16px;
 }
 
 .secondary-red {
@@ -116,10 +126,25 @@ li {
     font-size: 100px;
 }
 
+nav {
+    margin: 0;
+}
+
+main {
+    margin: 0
+}
+
 .big {
     color: $main-color;
-    font-size: 250px;
+    font-size: 450px;
     font-weight: bold;
+    letter-spacing: 15px;
+}
+
+.big-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
 }
 
 .info {
@@ -128,6 +153,16 @@ li {
 
 .header-text {
     justify-content: space-around;
+}
+
+.header-imgs {
+    display: flex;
+    justify-content: space-between;
+
+    &--right {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 .money-progress {
@@ -195,6 +230,10 @@ li {
         border-bottom: .8px solid rgb(172, 168, 168);
         border-bottom-style: dotted;
 
+        &:last-child {
+            border: none;
+        }
+
         &:first-child {
             margin-top: 15px
         }
@@ -205,20 +244,329 @@ li {
     }
 }
 
-@media only screen and (max-width: 767px) {
+.secondary-info {
+    .head-p {
+        display: inherit;
+    }
+
+    &--texts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+.box {
+    flex: 1 0 50px;
+}
+
+
+.present {
+    position: relative;
+    font-weight: bold;
+
+    &:nth-child(2) {
+        .content {
+            h2 {
+                font-size: 120px;
+                letter-spacing: 0.48px;
+                line-height: 135px;
+            }
+        }
+    }
+
+    .content {
+        right: 15%;
+        top: 15%;
+        position: absolute;
+        font-family: "CTCSplachRounded";
+        text-align: left;
+
+        h2 {
+            font-size: 60px;
+            letter-spacing: 0.24px;
+            line-height: 67px;
+        }
+
+
+        p {
+            font-size: 20px;
+
+            line-height: 22px;
+        }
+    }
+
+    .content-bottom {
+        position: absolute;
+        bottom: 2%;
+        right: 15%;
+    }
+}
+
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-child(2) {
+        img {
+            height: 193px;
+        }
+    }
+}
+
+
+.stepmoney {
+    .little-header {
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.072px;
+    }
+
+    .whyus {
+        font-size: 50px;
+        font-family: "CTCSplachRounded";
+        line-height: 56px;
+        letter-spacing: 0.2px;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+
+        &--little {
+            font-size: 30px;
+            line-height: 38px;
+            letter-spacing: 0.12px;
+            font-family: "AvenirNext";
+            font-style: normal;
+            font-weight: normal;
+        }
+    }
+}
+
+.advantages {
+    .advantage {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 35px;
+
+        &--text {
+            font-size: 24px;
+            line-height: 31px;
+            letter-spacing: 0.096px;
+        }
+
+        img {
+            height: 55px;
+            width: 55px;
+            margin-right: 25px;
+        }
+    }
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 55px 0;
+
+    button {
+        color: white;
+        background-color: $main-color;
+        border-radius: 6px;
+        border: none;
+        padding: 18px 90px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.bottom-banner {
+    height: 80vh;
+    background: url(../img/bottomBanner.png);
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    padding: 38px 0;
+
+    .bContent {
+        width: 55%;
+        float: left;
+
+        h1 {
+            font-size: 150px;
+            line-height: 168px;
+            letter-spacing: 0.6px;
+        }
+
+
+
+        .topText {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: 30px;
+                line-height: 34px;
+                letter-spacing: 0.12px;
+
+            }
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.056px;
+            width: 50%;
+        }
+
+        &--links {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.072px;
+
+            button {
+                &:first-child {
+                    color: white;
+                    background-color: $main-color;
+                    border-radius: 6px;
+                    border: none;
+                    padding: 17px 32px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 42px;
+                }
+
+                &:nth-child(2) {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.bottom-banner {
+    &--text {
+        margin: 70px 0;
+    }
+}
+
+.footer {
+    .footerCol {
+        p {
+            font-size: 11px;
+            line-height: 14px;
+            letter-spacing: 0.044px;
+        }
+
+        .lists {
+            a {
+                display: flex;
+                flex-direction: column;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 5px;
+                letter-spacing: 0.048px;
+            }
+
+            font-size: 14px;
+            line-height: 30px;
+            text-align: left;
+            letter-spacing: 0.056px;
+        }
+
+    }
+}
+
+
+// Media queries
+@media only screen and (max-width: 768px) {
     .main-info {
         p {
             display: flex;
             justify-content: space-between;
         }
     }
+
+
+
+    .bottom-banner {
+        display: none;
+    }
+
+
+    .present:nth-child(2) {
+        .content {
+            background-color: rgba(255, 255, 255, 0.349);
+            border-radius: 15px;
+            padding: 18px
+        }
+    }
+
+    .whyus-footer {
+        .whyus {
+            text-align: left;
+            font-size: 30px;
+
+            &--little {
+                font-size: 24px !important;
+            }
+        }
+    }
+
+    .stepmoney {
+        .rounded {
+            button {
+                border-radius: 30px;
+            }
+        }
+    }
+
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
+    .header-imgs {
+        display: flex;
+        justify-content: space-around;
+
+        &--right {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+    }
+
     .advantages {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
+    }
+
+    hr {
+        margin: 0 20px;
+        border: 1px solid #DBDBDB;
+    }
+
+
+    .big-right {
+        display: flex;
         flex-direction: row;
     }
 
@@ -255,7 +603,25 @@ li {
         }
     }
 
-    .secondary-info p {
-        display: inherit;
+    .whyus-footer {
+        .whyus {
+            span {
+                &:nth-child(2) {
+                    display: block
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footerCol {
+
+            .lists {
+                text-align: right;
+
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
     }
 }

@@ -5,9 +5,34 @@
 }
 
 body {
-    max-width: 1350px;
     margin: 0 auto !important;
     background-color: rgb(253, 249, 249) !important;
+
+}
+
+p {
+    font-family: "AvenirNext" !important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "CTCSplachRounded" !important;
+}
+
+hr {
+    border: 1px solid #979797;
+}
+
+.view {
+    height: 100%;
 }
 
 html,
@@ -17,4 +42,18 @@ body {
 
 .center-line {
     text-decoration: line-through;
+}
+
+@media (max-width: 740px) {
+
+    .view {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+
+    .view {
+        height: 650px;
+    }
 }
