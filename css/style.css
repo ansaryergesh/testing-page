@@ -227,16 +227,18 @@ body {
   float: left;
   margin: 0 10px 10px 0; }
 
-.voprosOtvet--top .container {
+.otherPages--top .container {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
-.voprosOtvet--top h1 {
-  font-size: 30px;
+.otherPages--top h1 {
+  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
   line-height: 34px;
   letter-spacing: 0.12px; }
 
-.voprosOtvet--top button {
+.otherPages--top button {
+  font-size: calc(16px + (18 - 10) * ((100vw - 320px) / (1600 - 320)));
   color: white;
   background-color: #EF2221;
   border-radius: 6px;
@@ -246,54 +248,53 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
   text-align: center;
   letter-spacing: 0.072px; }
 
-.voprosOtvet .voprosi {
+.otherPages .voprosi {
   border: 1px solid #979797;
   border-radius: 17px;
   background-color: white;
   padding: 25px 42px 36px;
   padding-bottom: 20px; }
-  .voprosOtvet .voprosi--top {
+  .otherPages .voprosi--top {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .voprosOtvet .voprosi--top h2 {
+    .otherPages .voprosi--top h2 {
       font-size: 24px;
       line-height: 27px;
       letter-spacing: 0.096px; }
-    .voprosOtvet .voprosi--top a:after {
+    .otherPages .voprosi--top a:after {
       content: "+";
       outline: none;
       color: #EF2221;
       font-size: 48px;
       font-family: "CTCSplachRounded"; }
-    .voprosOtvet .voprosi--top a.collapsed:after {
+    .otherPages .voprosi--top a.collapsed:after {
       content: "+";
       outline: none;
       color: #EF2221;
       font-size: 48px;
       font-family: "CTCSplachRounded"; }
-  .voprosOtvet .voprosi--otvet .otvet {
+  .otherPages .voprosi--otvet .otvet {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.056px; }
-  .voprosOtvet .voprosi--otvet .polezen h3,
-  .voprosOtvet .voprosi--otvet .polezen h5 {
+  .otherPages .voprosi--otvet .polezen h3,
+  .otherPages .voprosi--otvet .polezen h5 {
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.064px;
     color: black; }
-  .voprosOtvet .voprosi--otvet .polezen--buttons a {
+  .otherPages .voprosi--otvet .polezen--buttons a {
     width: 86px;
     height: 34px;
     border: 1px solid #D9D9D9;
     border-radius: 4px;
     padding: 7px 29px 5px;
     transition: 0.2s; }
-    .voprosOtvet .voprosi--otvet .polezen--buttons a:hover {
+    .otherPages .voprosi--otvet .polezen--buttons a:hover {
       background-color: #f2f2f2; }
 
 .animated-icon1 {

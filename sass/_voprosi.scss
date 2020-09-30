@@ -1,17 +1,19 @@
-.voprosOtvet {
+.otherPages {
     &--top {
         .container {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         h1 {
-            font-size: 30px;
+            font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
             line-height: 34px;
             letter-spacing: 0.12px;
         }
 
         button {
+            font-size: calc(16px + (18 - 10) * ((100vw - 320px) / (1600 - 320)));
             color: white;
             background-color: $main-color;
             border-radius: 6px;
@@ -21,7 +23,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 18px;
+
             text-align: center;
             letter-spacing: 0.072px
         }
