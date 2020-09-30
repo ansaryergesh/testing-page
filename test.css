@@ -1,59 +1,30 @@
-.bg {
-    background: #000 url("https://upload.wikimedia.org/wikipedia/commons/5/5b/Venice_Carnival_(2010).jpg") no-repeat center center;
-    background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    color: #fff;
-    height: calc(100vh);
+nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center !important;
 }
 
-.fa {
-    vertical-align: middle;
-    padding-left: 1%;
+.logo {
+    font-size: 30px;
+    line-height: 34px;
+    /* identical to box height */
+
+    letter-spacing: 0.12px;
+
+    color: #EF2221;
+
 }
 
-.fa-facebook-official {
-    padding-right: 9%;
-    cursor: pointer;
+.right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.btn-primary {
-    font-size: 16px;
-}
+.left-side {}
 
-.aligned-center {
-    text-align: center;
-}
-
-.circle-background {
-    background: #5bc0de;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    vertical-align: middle;
-}
-
-.shadow-effect {
-    webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.61);
-    -moz-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.61);
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.61);
-}
-
-#post-new {
-    background: #5bc0de;
-    padding: 28px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 2000;
-    float: right;
-    border-radius: 75%;
-    cursor: pointer;
-}
-
-#landing-space {
-    padding-top: 200px;
+.links,
+ul {
+    display: flex;
+    align-items: center;
 }
