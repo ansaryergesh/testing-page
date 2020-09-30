@@ -392,7 +392,9 @@ body {
       text-align: center;
       display: flex;
       flex-direction: column;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      /* Firefox 19+ */
+      /* Firefox 18- */ }
       .oplata .oplataform .input-group label h2 {
         font-size: 16px;
         line-height: 18px;
@@ -408,12 +410,20 @@ body {
         font-size: 16px;
         line-height: 18px;
         letter-spacing: 0.064px;
-        color: #ADADAD;
+        color: black;
         text-align: center;
         font-family: "CTCSplachRounded";
         transition: .5s; }
         .oplata .oplataform .input-group input:focus, .oplata .oplataform .input-group input:valid {
           border-color: #d5d5d6; }
+      .oplata .oplataform .input-group ::-webkit-input-placeholder {
+        color: #ADADAD; }
+      .oplata .oplataform .input-group ::-moz-placeholder {
+        color: #ADADAD; }
+      .oplata .oplataform .input-group :-moz-placeholder {
+        color: #ADADAD; }
+      .oplata .oplataform .input-group :-ms-input-placeholder {
+        color: #ADADAD; }
     .oplata .oplataform .buttonForm {
       display: flex;
       justify-content: center;
