@@ -409,7 +409,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 38px;
+    padding: 0 calc(20px + (48 - 20) * ((100vw - 767px) / (1600 - 767)));
     padding-bottom: 0;
     width: 369px;
     height: 369px;
@@ -592,6 +592,16 @@ main {
 @media only screen and (max-width: 768px) {
   nav {
     background-color: white; }
+  .advantages {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .advantages--box {
+      padding: 0 38px;
+      width: 369px;
+      height: 369px; }
   main {
     margin-top: 305px; }
   .main-info p {
@@ -640,6 +650,10 @@ main {
   .footerCols .footerCol:nth-child(4) {
     order: 6; } }
 
+@media only screen and (min-width: 1024px) {
+  .phone-numbers {
+    display: flex !important; } }
+
 @media only screen and (min-width: 768px) {
   main {
     margin-top: 195px; }
@@ -684,8 +698,6 @@ main {
   .big-right {
     display: flex;
     flex-direction: row; }
-  .phone-numbers {
-    display: flex !important; }
   .calculator .texts {
     display: flex !important;
     justify-content: space-between; }

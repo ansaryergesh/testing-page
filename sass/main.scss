@@ -160,8 +160,9 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 38px;
+        padding: 0 calc(20px + (48 - 20) * ((100vw - 767px) / (1600 - 767)));
         padding-bottom: 0;
+        // font-size: calc(20px + (25 - 20) * ((100vw - 767px) / (1600 - 767)));
         width: 369px;
         height: 369px;
         border-radius: 100%;
@@ -437,6 +438,20 @@ main {
         background-color: white;
     }
 
+    .advantages {
+        margin-top: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &--box {
+            padding: 0 38px;
+            width: 369px;
+            height: 369px;
+        }
+    }
+
     main {
         margin-top: 305px
     }
@@ -555,6 +570,12 @@ main {
     }
 }
 
+@media only screen and (min-width:1024px) {
+    .phone-numbers {
+        display: flex !important;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .container {}
 
@@ -633,9 +654,6 @@ main {
         flex-direction: row;
     }
 
-    .phone-numbers {
-        display: flex !important;
-    }
 
     .calculator {
         .texts {
