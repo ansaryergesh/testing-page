@@ -52,65 +52,44 @@
     <section class="otherPages">
         <div class="otherPages--top">
             <div class="container">
-                <h1>Вопрос ответ</h1>
+                <h1>Связатсья с нами</h1>
                 <button class="takebtn">Получить деньги</button>
             </div>
             <hr>
         </div>
         <div class="container">
 
-            <div class="voprosi">
-                <div class="voprosi--top">
-                    <h2>Кто может взять заем?</h2>
-                    <a class="more" type="button" data-toggle="collapse" data-target="#voprosi"></a>
-                </div>
-                <div class="collapse " id="voprosi">
-                    <div class="voprosi--otvet">
-                        <p class="otvet mb-5">
-                            * Отправить заявку вы можете в любое удобное для вас время, но рассмотрение и ответ по
-                            заявке
-                            будут осуществлены в рабочее время компании.
-                        </p>
-                        <div class="polezen">
-                            <h3 class="mb-3">Был ли полезен вам ответ?</h3>
-                            <div class="polezen--buttons">
-                                <a type="button">
-                                    <h5>Да</h5>
-                                </a>
-                                <a type="button">
-                                    <h5>Нет</h5>
-                                </a>
-                            </div>
-                        </div>
+            <div class="mapping row">
+                <div class="col-md-4 mapping--text">
+                    <h2 class="mb-5"> РК, г. Алматы,
+                        <br>ул. Ауэзова 112/15 н.п 8</h2>
+                    <div class="phones mb-3">
+                        <a href="tel: +77272501500"> <i class="fa fa-phone"></i>+7 727 250 15 00</a>
+                        <a href="tel: +77272501500"> <i class="fa fa-phone"></i>+7 727 250 15 00</a>
+                        <a href="tel: +77272501500"><i class="fa fa-phone"></i>+7 727 250 15 00</a>
+                        <a href="tel: +77272501500"> <i class="fa fa-phone"></i>+7 727 250 15 00</a>
                     </div>
+
+
+                </div>
+                <div class="mapping--map col-md-8">
+                    <div id="googleMap" style="width:100%;height:600px;"></div>
+
+                    <script>
+                        function myMap() {
+                            var mapProp = {
+                                center: new google.maps.LatLng(43.2323017, 76.90506239999999),
+                                zoom: 300,
+                            };
+                            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                        }
+                    </script>
+
+                    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
                 </div>
             </div>
-            <div class="voprosi">
-                <div class="voprosi--top">
-                    <h2>Кто может взять заем?</h2>
-                    <a class="more" type="button" data-toggle="collapse" data-target="#voprosi"></a>
-                </div>
-                <div class="collapse" id="voprosi">
-                    <div class="voprosi--otvet">
-                        <p class="otvet mb-5">
-                            * Отправить заявку вы можете в любое удобное для вас время, но рассмотрение и ответ по
-                            заявке
-                            будут осуществлены в рабочее время компании.
-                        </p>
-                        <div class="polezen">
-                            <h3 class="mb-3">Был ли полезен вам ответ?</h3>
-                            <div class="polezen--buttons">
-                                <a type="button">
-                                    <h5>Да</h5>
-                                </a>
-                                <a type="button">
-                                    <h5>Нет</h5>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
 
     </section>
     </div>
@@ -176,10 +155,9 @@
             </div>
         </div>
     </footer>
+    <script>
 
-
-    <hr>
-
+    </script>
 </body>
 
 </html>

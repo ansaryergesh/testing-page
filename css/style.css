@@ -20,7 +20,11 @@ p {
 
 a {
   color: black !important;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
+
+i {
+  cursor: pointer; }
 
 h1,
 h2,
@@ -301,6 +305,35 @@ body {
     transition: 0.2s; }
     .otherPages .voprosi--otvet .polezen--buttons a:hover {
       background-color: #f2f2f2; }
+
+@media only screen and (max-width: 768px) {
+  .mapping--text {
+    text-align: center; } }
+
+.mapping--text h2 {
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: 0.096px; }
+
+.mapping--text .phones {
+  display: flex;
+  flex-direction: column; }
+  .mapping--text .phones .fa-phone {
+    color: #EF2221;
+    font-size: 18px !important;
+    margin-right: 12px; }
+  .mapping--text .phones a {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.12px;
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .mapping--text .phones a {
+        display: flex;
+        justify-content: center; } }
+    .mapping--text .phones a:hover {
+      text-decoration: none; }
 
 .animated-icon1 {
   width: 24px;
