@@ -101,8 +101,12 @@
             background-color: $main-color;
             color: white;
             border: none;
-            padding: 17px calc(35px + (58 - 35) * ((100vw - 720px) / (1600 - 720)));
+            padding: 17px calc(45px + (58 - 45) * ((100vw - 720px) / (1600 - 720)));
             border-radius: 7px;
         }
     }
+}
+
+.oplata {
+    margin-bottom: 150px;
 }

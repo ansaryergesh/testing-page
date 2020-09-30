@@ -75,6 +75,13 @@
     margin-right: 5px;
 }
 
+nav {
+    -webkit-box-shadow: 0px 94px 300px -57px rgba(0, 0, 0, 0.377);
+    -moz-box-shadow: 0px 94px 300px -57px rgba(0, 0, 0, 0.384);
+    box-shadow: 0px 94px 300px -57px rgba(0, 0, 0, 0.336);
+
+}
+
 .links {
     display: flex;
 
