@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
@@ -17,242 +17,137 @@
 </head>
 
 <body>
-    <h3>Collapser A</h3>
-
-    <div class="panel-group" id="accordionSingleOpen" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" href="#collapseItemOpenOne" aria-expanded="true"
-                        aria-controls="collapseItemOpenOne">
-                        Collapsible Single Item Open on Load
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseItemOpenOne" class="panel-collapse collapse in" role="tabpanel"
-                aria-labelledby="headingOne">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table,
-                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                    VHS.
+    <header class="mb-5">
+        <nav class="navbar sticky-top navbar-expand-md navbar-light  transparent">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">
+                    <h1>zaymi.kz</h1>
+                </a>
+                <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navigationBar"
+                    aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon1"><span></span><span></span><span></span></div>
+                </button>
+                <ul class="phone-numbers nav navbar-nav">
+                    <li><i class="fa fa-phone"></i><a href="tel: +772722501500"></a>+77272 <b>250 15 00</b></li>
+                    <li><i class="fab fa-whatsapp"><a href="#"></a></i>+77272 <b>750 15 00</b></li>
+                </ul>
+                <div class="collapse navbar-collapse text-center justify-content-end" id="navigationBar">
+                    <ul class="navbar-nav links">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link align-items-center d-flex" href="#"> Способ оплаты</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link align-items-center d-flex" href="#">
+                                Внести оплату</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link align-items-center d-flex" href="#"> Личный кабинет</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </header>
+
+    <section class="otherPages">
+
+        <div class="container">
+            <section class="oplata row">
+                <div class="col-lg-6 oplata--text mb-5">
+                    <h2>Оплата кредита</h2>
+                    <p>После нажатия кнопки оплатить вы будете перенаправлены на страницу оплаты</p>
+                </div>
+                <div class="col-lg-6 oplate--form">
+                    <form class="oplataform">
+                        <div class="input-group">
+                            <label for="iin">
+                                <h2>Ваш ИИН:</h2>
+                            </label>
+                            <input type="text" placeholder="Вводить сюда" id="iin" name="iin" required />
+                        </div>
+                        <div class="input-group">
+                            <label for="summa">
+                                <h2>Сумма платежа:</h2>
+                            </label>
+                            <input type="summa" id="summa" name="summa" placeholder="Вводить сюда" required />
+                        </div>
+
+                        <div class="buttonForm">
+                            <button class=" oplataform--button">Получить деньги</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
         </div>
+
+
+
+    </section>
     </div>
+    <footer class="footer mb-5">
+        <hr class="mt-5 mb-3">
+        <div class="container">
+            <div class="row footerCols">
+                <div class="col-md-4 footerCol">
+                    <img src="img/zaymi.kz.png" alt="">
+                    <p>Прием заявок круглосуточно и без выходных.
+                        <span class="d-block"></span>Рассмотрение и отправка денег Пн-Пт | 09:00-18:00</p>
+                    <div class="socials">
+                        <p>Мы в соц сетях</p>
+                        <div class="socials--icons">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
 
-    <hr>
+                </div>
+                <div class="col-md-4 footerCol">
+                    <div class="lists">
+                        <a href="">Условия предоставления займов</a>
+                        <a href="">Как получить деньги</a>
+                        <a href="">Как вернуть деньги</a>
+                        <a href="">Вопрос - ответ (помощь)</a>
+                        <a href="">Контакты</a>
+                    </div>
 
-    <h3>Collapser B</h3>
+                </div>
+                <div class="col-md-4 footerCol">
+                    <div class="lists">
+                        <p>ТОО «МФО «I-Credit.kz» </p>
+                        <p>г. Алматы, 050057</p>
+                        <p>ул. Ауэзова 112/15 н.п 8</p>
+                        <p>БИН: 070440003902</p>
+                        <p>ОКЭД: 64929</p>
+                        <p>Р/сч: KZ976017131000000372</p>
+                        <p>АО "Народный Банк Казахстана""</p>
+                        <p>БИК: HSBKKZKX</p>
+                    </div>
 
-    <div class="panel-group" id="accordionSingleClosed" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseItemCloseOne"
-                        aria-expanded="true" aria-controls="collapseItemCloseOne">
-                        Collapsible Single Item Closed on Load
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseItemCloseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table,
-                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                    VHS.
+                </div>
+                <div class="col-md-4 footerCol">
+                    <p class="mt-5">
+                        © 2020 www.zaymi.kz | ТОО «iCredit.kz»<br>
+                        № регистрации НБРК: 05.17.012 (с 11/10/2017)
+                    </p>
+                </div>
+                <div class="col-md-4  footerCol">
+
+                    <div class="extra-info">
+                        <object data="img/Group 14.svg" type="image/svg+xml"></object>
+                        <p>Правила<br>предостав-ления займов</p>
+                    </div>
+                </div>
+                <div class="col-md-4 footerCol">
+                    <div class="extra-info">
+                        <object data="img/Group 14.svg" type="image/svg+xml"></object>
+                        <p>Онлайн консультант <br> по всем вопросам</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <hr>
-
-    <h3>Collapser C</h3>
-
-    <div class="panel-group" id="accordionGroupOpen" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordionGroupOpen" href="#collapseOpenOne"
-                        aria-expanded="true" aria-controls="collapseOpenOne">
-                        Collapsible Group Item #1 Open on Load
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOpenOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table,
-                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                    VHS.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupOpen"
-                        href="#collapseOpenTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2 Closed on Load
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOpenTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table,
-                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                    VHS.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupOpen"
-                        href="#collapseOpenThree" aria-expanded="false" aria-controls="collapseThree">
-                        Collapsible Group Item #3 Closed on Load
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOpenThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table,
-                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                    VHS.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <h3>Collapser D</h3>
-
-    <div class="panel-group" id="accordionGroupClosed" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupClosed"
-                        href="#collapseCloseOne" aria-expanded="true" aria-controls="collapseCloseOne">
-                        Collapsible Group Item #1 Closed on Load
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseCloseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table,
-                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                    VHS.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupClosed"
-                        href="#collapseCloseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2 Closed on Load
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseCloseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table,
-                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                    VHS.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupClosed"
-                        href="#collapseCloseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Collapsible Group Item #3 Closed on Load
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseCloseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table,
-                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                    VHS.
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <style>
-        body {
-            padding: 5rem;
-        }
-
-        .panel,
-        .panel-body {
-            box-shadow: none;
-        }
-
-        .panel-group .panel-heading {
-            padding: 0;
-        }
-
-        .panel-group .panel-heading a {
-            display: block;
-            padding: 10px 15px;
-            text-decoration: none;
-            position: relative;
-        }
-
-        .panel-group .panel-heading a:after {
-            content: '-';
-            float: right;
-        }
-
-        .panel-group .panel-heading a.collapsed:after {
-            content: '+';
-        }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src=" script.js">
+    </footer>
+    <script src="script.js">
     </script>
 </body>
 
