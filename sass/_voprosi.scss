@@ -30,6 +30,7 @@
     }
 
     .voprosi {
+        cursor: pointer;
         border: 1px solid #979797;
         border-radius: 17px;
         background-color: white;
@@ -42,10 +43,18 @@
             justify-content: space-between;
             align-items: center;
 
+            @media only screen and (max-width: 768px) {
+                h2.collapsed:after {
+                    font-size: 48px;
+                }
+            }
+
             h2 {
                 font-size: 24px;
                 line-height: 27px;
                 letter-spacing: 0.096px;
+
+
             }
 
             a {
@@ -62,7 +71,7 @@
             }
 
             a.collapsed:after {
-                content: "+";
+                content: "–";
                 outline: none;
                 color: $main-color;
                 font-size: 48px;
