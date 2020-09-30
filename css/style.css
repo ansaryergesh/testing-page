@@ -794,7 +794,7 @@ main {
   justify-content: space-around; }
   @media only screen and (min-width: 768px) {
     .oplata {
-      padding: 0 calc(0px + (100 - 0) * ((100vw - 720px) / (1600 - 720))); } }
+      padding: 0 calc(60px + (100 - 60) * ((100vw - 720px) / (1600 - 720))); } }
   @media only screen and (max-width: 768px) {
     .oplata--text {
       text-align: center; } }
