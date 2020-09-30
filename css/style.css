@@ -243,12 +243,12 @@ body {
   letter-spacing: 0.12px; }
 
 .otherPages--top button {
-  font-size: calc(16px + (18 - 10) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(15px + (16 - 15) * ((100vw - 768px) / (1600 - 768)));
   color: white;
   background-color: #EF2221;
   border-radius: 6px;
   border: none;
-  padding: 18px 46px;
+  padding: 15px calc(16px + (46 - 16) * ((100vw - 768px) / (1600 - 768)));
   text-align: center;
   display: flex;
   justify-content: center;
