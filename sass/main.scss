@@ -709,3 +709,59 @@ main {
 
     }
 }
+
+.conditions {
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        .condition {
+            display: flex !important;
+            align-items: center !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        .condition {
+            &--info {
+                p {
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+
+    .condition {
+        padding: 90px 0;
+
+
+        &--head {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            p {
+                font-size: 18px;
+                line-height: 23px;
+                letter-spacing: 0.072px;
+            }
+        }
+
+        &--info {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.056px;
+
+            p {
+
+                display: flex;
+                justify-content: space-around;
+
+            }
+        }
+    }
+}

@@ -757,3 +757,33 @@ main {
     text-align: right;
     margin: 0 !important;
     padding: 0 !important; } }
+
+.conditions:not(:last-child) {
+  border-bottom: 1px solid #DDDDDD; }
+
+@media only screen and (min-width: 768px) {
+  .conditions .condition {
+    display: flex !important;
+    align-items: center !important; } }
+
+@media only screen and (max-width: 768px) {
+  .conditions .condition--info p {
+    padding: 0 5px; } }
+
+.conditions .condition {
+  padding: 90px 0; }
+  .conditions .condition--head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .conditions .condition--head p {
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: 0.072px; }
+  .conditions .condition--info {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.056px; }
+    .conditions .condition--info p {
+      display: flex;
+      justify-content: space-around; }

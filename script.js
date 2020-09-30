@@ -13,12 +13,3 @@ $('#draggable-point').draggable({
       });
     }
   });
-
-
-  function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(43.2323017, 76.90506239999999),
-        zoom: 300,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
