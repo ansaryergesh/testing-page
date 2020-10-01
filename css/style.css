@@ -290,7 +290,7 @@ body {
       content: "+";
       outline: none;
       color: #EF2221;
-      font-size: 48px;
+      font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1600 - 320))) !important;
       font-family: "CTCSplachRounded"; }
     .otherPages .voprosi--top a.collapsed:after {
       content: "–";

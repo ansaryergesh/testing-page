@@ -80,7 +80,7 @@
                     content: "+";
                     outline: none;
                     color: $main-color;
-                    font-size: 48px;
+                    font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1600 - 320))) !important;
                     font-family: "CTCSplachRounded";
                 }
 
