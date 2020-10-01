@@ -1,4 +1,11 @@
 .otherPages {
+
+    h1 {
+        font-size: calc(28px + (30 - 28) * ((100vw - 768px) / (1600 - 768)));
+        line-height: 34px;
+        letter-spacing: 0.12px;
+    }
+
     &--top {
         .container {
             display: flex;
@@ -17,11 +24,6 @@
             }
         }
 
-        h1 {
-            font-size: calc(28px + (30 - 28) * ((100vw - 768px) / (1600 - 768)));
-            line-height: 34px;
-            letter-spacing: 0.12px;
-        }
 
         button {
             font-size: calc(15px + (16 - 15) * ((100vw - 768px) / (1600 - 768)));

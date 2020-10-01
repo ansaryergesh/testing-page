@@ -1,0 +1,35 @@
+.kakoplatit {
+    text-align: center;
+
+    p {
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.072px;
+    }
+
+    .phones {
+        display: flex;
+        justify-content: space-around;
+
+        @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+}
+
+.infomail {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.12px;
+    padding: 10px 25px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    border-radius: 6px;
+    text-decoration: none !important;
+
+    &:hover {
+        background-color: darken($color: white, $amount: 3);
+    }
+}

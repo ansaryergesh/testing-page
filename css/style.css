@@ -232,6 +232,11 @@ body {
   float: left;
   margin: 0 10px 10px 0; }
 
+.otherPages h1 {
+  font-size: calc(28px + (30 - 28) * ((100vw - 768px) / (1600 - 768)));
+  line-height: 34px;
+  letter-spacing: 0.12px; }
+
 .otherPages--top .container {
   display: flex;
   justify-content: space-between;
@@ -244,11 +249,6 @@ body {
       flex-direction: column; }
       .otherPages--top .container h1 {
         margin-bottom: 25px; } }
-
-.otherPages--top h1 {
-  font-size: calc(28px + (30 - 28) * ((100vw - 768px) / (1600 - 768)));
-  line-height: 34px;
-  letter-spacing: 0.12px; }
 
 .otherPages--top button {
   font-size: calc(15px + (16 - 15) * ((100vw - 768px) / (1600 - 768)));
@@ -326,22 +326,24 @@ body {
 .mapping--text .phones {
   display: flex;
   flex-direction: column; }
-  .mapping--text .phones .fa-phone {
-    color: #EF2221;
-    font-size: 18px !important;
-    margin-right: 12px; }
-  .mapping--text .phones a {
-    font-size: 30px;
-    line-height: 38px;
-    letter-spacing: 0.12px;
-    display: flex;
-    align-items: center; }
-    @media only screen and (max-width: 768px) {
-      .mapping--text .phones a {
-        display: flex;
-        justify-content: center; } }
-    .mapping--text .phones a:hover {
-      text-decoration: none; }
+
+.phones .fa-phone {
+  color: #EF2221;
+  font-size: 18px !important;
+  margin-right: 12px; }
+
+.phones a {
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.12px;
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 768px) {
+    .phones a {
+      display: flex;
+      justify-content: center; } }
+  .phones a:hover {
+    text-decoration: none; }
 
 .conditions:not(:last-child) {
   border-bottom: 1px solid #DDDDDD; }
@@ -379,7 +381,7 @@ body {
   justify-content: space-around; }
   @media only screen and (min-width: 768px) {
     .oplata {
-      padding: 0 calc(60px + (100 - 60) * ((100vw - 720px) / (1600 - 720))); } }
+      padding: 0 calc(60px + (90 - 60) * ((100vw - 720px) / (1600 - 720))); } }
   @media only screen and (max-width: 768px) {
     .oplata--text {
       text-align: center; } }
@@ -391,6 +393,12 @@ body {
     font-size: 24px;
     line-height: 31px;
     letter-spacing: 0.096px; }
+    @media only screen and (min-width: 1440px) {
+      .oplata--text p {
+        width: 65%; } }
+    @media only screen and (min-width: 1024px) {
+      .oplata--text p {
+        width: 80%; } }
   .oplata .oplataform {
     padding: 45px;
     background: #FFFFFF;
@@ -447,6 +455,32 @@ body {
 
 .oplata {
   margin-bottom: 150px; }
+
+.kakoplatit {
+  text-align: center; }
+  .kakoplatit p {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.072px; }
+  .kakoplatit .phones {
+    display: flex;
+    justify-content: space-around; }
+    @media only screen and (max-width: 768px) {
+      .kakoplatit .phones {
+        display: flex;
+        flex-direction: column; } }
+
+.infomail {
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.12px;
+  padding: 10px 25px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  border-radius: 6px;
+  text-decoration: none !important; }
+  .infomail:hover {
+    background-color: #f7f7f7; }
 
 .animated-icon1 {
   width: 24px;
@@ -639,8 +673,8 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center; }
-  .step:nth-child(2) img {
-    height: 193px; }
+  .step:nth-child(2) object {
+    margin-bottom: 17px; }
 
 .stepmoney .little-header {
   font-size: 18px;

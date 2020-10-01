@@ -14,33 +14,34 @@
             display: flex;
             flex-direction: column;
 
-
-
-            .fa-phone {
-                color: $main-color;
-                font-size: 18px !important;
-                margin-right: 12px;
-            }
-
-            a {
-                font-size: 30px;
-                line-height: 38px;
-                letter-spacing: 0.12px;
-                display: flex;
-                align-items: center;
-
-                @media only screen and (max-width: 768px) {
-                    display: flex;
-                    justify-content: center;
-                }
-
-                &:hover {
-                    text-decoration: none;
-                }
-            }
         }
     }
 
     &--map {}
 
+}
+
+.phones {
+    .fa-phone {
+        color: $main-color;
+        font-size: 18px !important;
+        margin-right: 12px;
+    }
+
+    a {
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: 0.12px;
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }

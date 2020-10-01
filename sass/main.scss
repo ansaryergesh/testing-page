@@ -6,6 +6,7 @@
 @import "map";
 @import "condition";
 @import "oplata";
+@import "kakoplatit";
 @import url("../fonts.css");
 
 .animated-icon1 {
@@ -286,8 +287,8 @@ main {
     text-align: center;
 
     &:nth-child(2) {
-        img {
-            height: 193px;
+        object {
+            margin-bottom: 17px;
         }
     }
 }
