@@ -61,12 +61,16 @@
 
 
             h2 {
-                color: $main-color;
+                color: black;
                 line-height: 27px;
                 letter-spacing: 0.096px;
                 line-height: 27px;
                 letter-spacing: 0.096px;
                 font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320))) !important;
+            }
+
+            h2.collapsed:after {
+                color: $main-color
             }
 
             a {
@@ -126,9 +130,4 @@
         }
 
     }
-}
-
-.collapsed h2 {
-    color: black !important;
-
 }
