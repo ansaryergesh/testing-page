@@ -266,7 +266,6 @@ body {
   letter-spacing: 0.072px; }
 
 .otherPages .voprosi {
-  cursor: pointer;
   border: 1px solid #979797;
   border-radius: 17px;
   background-color: white;
@@ -274,6 +273,7 @@ body {
   padding-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320)));
   margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320))); }
   .otherPages .voprosi--top {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center; }
