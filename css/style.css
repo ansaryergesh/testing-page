@@ -236,9 +236,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 768px) {
+    .otherPages--top .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .otherPages--top .container h1 {
+        margin-bottom: 25px; } }
 
 .otherPages--top h1 {
-  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(28px + (30 - 28) * ((100vw - 768px) / (1600 - 768)));
   line-height: 34px;
   letter-spacing: 0.12px; }
 
@@ -248,7 +256,7 @@ body {
   background-color: #EF2221;
   border-radius: 6px;
   border: none;
-  padding: 15px calc(16px + (46 - 16) * ((100vw - 768px) / (1600 - 768)));
+  padding: 15px calc(36px + (46 - 36) * ((100vw - 768px) / (1600 - 768)));
   text-align: center;
   display: flex;
   justify-content: center;
