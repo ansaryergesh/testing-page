@@ -1,12 +1,98 @@
 .pogasit {
-    cursor: pointer;
     border: 1px solid #979797;
     border-radius: 17px;
     background-color: white;
+    padding: 25px calc(15px + (22 - 15) * ((100vw - 320px) / (1600 - 320))) calc(6px + (36 - 6) * ((100vw - 320px) / (1600 - 320)));
+    padding-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1600 - 320)));
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320)));
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 
-    padding: 25px 32px;
-    padding-bottom: 20px;
+
+    a {
+        &:after {
+            content: "+";
+            outline: none;
+            color: $main-color;
+            font-size: calc(34px + (48 - 34) * ((100vw - 320px) / (1600 - 320))) !important;
+            font-family: "CTCSplachRounded";
+        }
+
+    }
+
+    &:first-child {
+        margin-top: 35px;
+    }
+
+
+
+    &--top {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        h2 {
+            // transform: translateY(65%);
+            color: black;
+            line-height: 27px;
+            letter-spacing: 0.096px;
+            line-height: 27px;
+            letter-spacing: 0.096px;
+            font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1600 - 320))) !important;
+        }
+
+
+    }
+
+
+
+    &--instruction {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+
+    &--logo {
+        width: 96px;
+        height: 100%;
+
+        img {
+            transform: translateX(-5%);
+        }
+
+        // justify-content: center;
+    }
+
+
+    &--otvet {
+        padding-right: 55px;
+
+        .instruction {
+            p {
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0.056px;
+
+                &:first-child {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    ;
+                }
+            }
+
+            &--img {
+                background-color: rgb(224, 224, 224);
+                width: 80%;
+                height: 200px;
+            }
+        }
+    }
 }
+
 
 .voprosiTop-left {
     display: flex;

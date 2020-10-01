@@ -62,6 +62,7 @@ body {
 .footer .footerCol .lists {
   font-size: 14px;
   line-height: 30px;
+  font-family: "CTCSplachRounded";
   text-align: left;
   letter-spacing: 0.056px; }
   .footer .footerCol .lists a {
@@ -271,7 +272,12 @@ body {
   background-color: white;
   padding: 25px calc(15px + (42 - 15) * ((100vw - 320px) / (1600 - 320))) calc(6px + (36 - 6) * ((100vw - 320px) / (1600 - 320)));
   padding-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320)));
-  margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320))); }
+  margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320)));
+  position: relative; }
+  .otherPages .voprosi:first-child {
+    margin-top: 35px; }
+  .otherPages .voprosi:last-child {
+    margin-bottom: 50px; }
   .otherPages .voprosi--top {
     cursor: pointer;
     display: flex;
@@ -283,7 +289,7 @@ body {
       letter-spacing: 0.096px;
       line-height: 27px;
       letter-spacing: 0.096px;
-      font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320))) !important; }
+      font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1600 - 320))) !important; }
     .otherPages .voprosi--top h2.collapsed:after {
       color: #EF2221; }
     .otherPages .voprosi--top a:after {
@@ -487,12 +493,58 @@ body {
     background-color: #f7f7f7; }
 
 .pogasit {
-  cursor: pointer;
   border: 1px solid #979797;
   border-radius: 17px;
   background-color: white;
-  padding: 25px 32px;
-  padding-bottom: 20px; }
+  padding: 25px calc(15px + (22 - 15) * ((100vw - 320px) / (1600 - 320))) calc(6px + (36 - 6) * ((100vw - 320px) / (1600 - 320)));
+  padding-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1600 - 320)));
+  margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320)));
+  position: relative;
+  display: flex;
+  justify-content: space-between; }
+  .pogasit a:after {
+    content: "+";
+    outline: none;
+    color: #EF2221;
+    font-size: calc(34px + (48 - 34) * ((100vw - 320px) / (1600 - 320))) !important;
+    font-family: "CTCSplachRounded"; }
+  .pogasit:first-child {
+    margin-top: 35px; }
+  .pogasit--top {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .pogasit--top h2 {
+      color: black;
+      line-height: 27px;
+      letter-spacing: 0.096px;
+      line-height: 27px;
+      letter-spacing: 0.096px;
+      font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1600 - 320))) !important; }
+  .pogasit--instruction {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center; }
+  .pogasit--logo {
+    width: 96px;
+    height: 100%; }
+    .pogasit--logo img {
+      transform: translateX(-5%); }
+  .pogasit--otvet {
+    padding-right: 55px; }
+    .pogasit--otvet .instruction p {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.056px; }
+      .pogasit--otvet .instruction p:first-child {
+        text-transform: uppercase;
+        font-weight: bold; }
+    .pogasit--otvet .instruction--img {
+      background-color: #e0e0e0;
+      width: 80%;
+      height: 200px; }
 
 .voprosiTop-left {
   display: flex;
