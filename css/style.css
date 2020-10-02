@@ -239,6 +239,12 @@ body {
     font-size: calc(28px + (30 - 28) * ((100vw - 768px) / (1600 - 768)));
     line-height: 34px;
     letter-spacing: 0.12px; }
+  .otherPages button:hover {
+    background-color: #e61211 !important;
+    transition: all .5s ease;
+    -webkit-box-shadow: -12px 13px 195px -14px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: -12px 13px 195px -14px rgba(0, 0, 0, 0.54);
+    box-shadow: -12px 13px 195px -14px rgba(0, 0, 0, 0.54); }
   .otherPages--top .container {
     display: flex;
     justify-content: space-between;

@@ -7,6 +7,15 @@
         letter-spacing: 0.12px;
     }
 
+    button:hover {
+        background-color: darken($main-color, 5%) !important;
+        transition: all .5s ease;
+        -webkit-box-shadow: -12px 13px 195px -14px rgba(0, 0, 0, 0.54);
+        -moz-box-shadow: -12px 13px 195px -14px rgba(0, 0, 0, 0.54);
+        box-shadow: -12px 13px 195px -14px rgba(0, 0, 0, 0.54);
+
+    }
+
     &--top {
         .container {
             display: flex;
