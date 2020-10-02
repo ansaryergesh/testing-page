@@ -51,12 +51,81 @@
             </div>
         </nav>
     </header>
+    <div class="modal fade" id="modalmoney" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <section class="calculator container">
+                <div class="calculator-band row d-flex justify-content-between">
+                    <div class="progress-bars col-md-4">
+                        <div id="money" class="money">
+                            <div class="money-progress" id="money-progress">
+                                <div id="draggable-point" style="left:75%;position:absolute;"
+                                    class="draggable ui-widget-content">
+                                    <div id="money-progress-handle"></div>
+                                </div>
+                                <div id="money-progress-bar" class="bar" style="width:75%">
+                                </div>
+                            </div>
+                            <div id="posX"></div>
+                            <div class="text mt-3 d-flex justify-content-between">
+                                <p>10 000тг</p>
+                                <p>135 000тг</p>
+                            </div>
+                        </div>
+                        <div id="day" class="day">
+                            <div class="money-progress" id="money-progress">
+                                <div id="draggable-point" style="left:75%;position:absolute;"
+                                    class="draggable ui-widget-content">
+                                    <div id="money-progress-handle"></div>
+                                </div>
+                                <div id="money-progress-bar" class="bar" style="width:75%">
+                                </div>
+                            </div>
+                            <div class="text mt-3 d-flex justify-content-between">
+                                <p>15 дней</p>
+                                <p>90 дней</p>
+                            </div>
+                        </div>
+                        <button class="takebtn">Получить деньги</button>
+                    </div>
+                    <div class="calculator-info col-md-7">
+                        <div class="main-info">
+                            <p class="text-center " id="summa">Сумма на руки <b class="">10 000тг</b></p>
+                            <p class="text-center " id="dnei">Срок (дней) <b class="">20</b></p>
+                            <p class="text-center " id="vozvrat">К возврату <b class="">13 000тг</b></p>
+                        </div>
+                        <div class="secondary-info">
+                            <p class="text-center head-p">Возращаете в том числе:</p>
+                            <div class="secondary-info--texts">
+                                <div class="box">
+                                    <p class="text-center">Основной долг</p>
+                                    <p class="d-inline-block red center-line">19 000 </p><b> 10
+                                        000тг</b>
 
+
+                                </div>
+                                <div class="box">
+                                    <p class="text-center">Страхование </p>
+                                    <p class="d-inline-block red center-line">9 000 </p><b> 1
+                                        500тг</b>
+                                </div>
+
+                                <div class="box">
+                                    <p class="text-center">Вознаграждение</p>
+                                    <p class="d-inline-block red center-line">9 000 </p><b> 1
+                                        500тг</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <section class="otherPages">
         <div class="otherPages--top">
             <div class="container">
                 <h1>Условия предостовления займов</h1>
-                <button class="takebtn">Получить деньги</button>
+                <button class="takebtn" data-toggle="modal" data-target="#modalmoney">Получить деньги</button>
             </div>
             <hr>
         </div>

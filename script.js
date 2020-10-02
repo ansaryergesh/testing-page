@@ -59,34 +59,34 @@ $("#oplataform").validate({
     }
   });
 
-// var bar, slider;
-// var days = 15;
-// var money = 15000;
-// var summa = document.getElementById("summa");
-// var dnei = document.getElementById("dnei");
-// var vozvrat = document.getElementById("vozvrat");
-// summa.appendChild(money);
-// function init(){
-// 	bar = document.getElementById('money-progress-bar');
-// 	slider = document.getElementById('draggable-point');
-// 	info = document.getElementById('info');
-// 	bar.addEventListener('mousedown', startSlide, false);	
-// 	bar.addEventListener('mouseup', stopSlide, false);
-// }
-// function startSlide(event){
-// 	var set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
-// 	info.innerHTML = 'start' + set_perc + '%';	
-// 	bar.addEventListener('mousemove', moveSlide, false);	
-// 	slider.style.width = (set_perc * 100) + '%';	
-// }
-// function moveSlide(event){
-// 	var set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
-// 	info.innerHTML = 'moving : ' + set_perc + '%';
-// 	slider.style.width = (set_perc * 100) + '%';
-// }
-// function stopSlide(event){
-// 	var set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
-// 	info.innerHTML = 'done : ' + set_perc + '%';
-// 	bar.removeEventListener('mousemove', moveSlide, false);
-// 	slider.style.width = (set_perc * 100) + '%';
-// }
+var bar, slider;
+var days = 15;
+var money = 15000;
+var summa = document.getElementById("summa");
+var dnei = document.getElementById("dnei");
+var vozvrat = document.getElementById("vozvrat");
+summa.appendChild(money);
+function init(){
+	bar = document.getElementById('money-progress-bar');
+	slider = document.getElementById('draggable-point');
+	info = document.getElementById('info');
+	bar.addEventListener('mousedown', startSlide, false);	
+	bar.addEventListener('mouseup', stopSlide, false);
+}
+function startSlide(event){
+	var set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
+	info.innerHTML = 'start' + set_perc + '%';	
+	bar.addEventListener('mousemove', moveSlide, false);	
+	slider.style.width = (set_perc * 100) + '%';	
+}
+function moveSlide(event){
+	var set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
+	info.innerHTML = 'moving : ' + set_perc + '%';
+	slider.style.width = (set_perc * 100) + '%';
+}
+function stopSlide(event){
+	var set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
+	info.innerHTML = 'done : ' + set_perc + '%';
+	bar.removeEventListener('mousemove', moveSlide, false);
+	slider.style.width = (set_perc * 100) + '%';
+}

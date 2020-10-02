@@ -682,6 +682,9 @@ main {
 .info {
   display: block; }
 
+.modal-money {
+  cursor: pointer; }
+
 .advantages {
   margin-top: 55px;
   display: flex;
