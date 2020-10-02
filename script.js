@@ -1,15 +1,12 @@
-$('#draggable-point').draggable({
-    axis: 'x',
-    containment: "#money-progress"
-  });
-  
-  $('#draggable-point').draggable({
-    drag: function() {
-      var offset = $(this).offset();
-      var xPos = (100 * parseFloat($(this).css("left"))) / (parseFloat($(this).parent().css("width"))) + "%";
+var $win = $(window);
 
-      $('#money-progress-bar').css({
-        'width': xPos
-      });
+$win.scroll(function () {
+    if ($(window).width() > 550) {
+        if ($win.scrollTop() == 0) {
+            $(".navbar").removeClass("fade-color");
+        } else if (!$win.scrollTop() == 0) {
+            $(".navbar").addClass("fade-color");
+        }
+
     }
-  });
+});

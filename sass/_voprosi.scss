@@ -1,4 +1,6 @@
 .otherPages {
+    margin-top: 115px;
+
     h1 {
         font-size: calc(28px + (30 - 28) * ((100vw - 768px) / (1600 - 768)));
         line-height: 34px;
@@ -106,6 +108,7 @@
         }
 
         &--otvet {
+
             .otvet {
                 font-size: 14px;
                 line-height: 18px;
