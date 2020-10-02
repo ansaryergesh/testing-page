@@ -26,6 +26,8 @@
     cursor: pointer;
 }
 
+
+
 .headerContent {
     padding-top: 105px
 }
@@ -83,7 +85,7 @@
 .navbar {
     position: fixed !important;
     width: 100%;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
     // background-color: white !important;
 }
 
@@ -91,7 +93,7 @@
 
 .fade-color {
     background-color: white !important;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
     border-bottom: 1px solid #D8D8D8;
 }
 

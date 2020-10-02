@@ -42,6 +42,13 @@
         box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.13915);
         border-radius: 21px;
 
+
+        .input-block.error input {
+            border: 1px solid red !important;
+            box-shadow: 0 0 8px red !important;
+            outline: none;
+        }
+
         .input-group {
             text-align: center;
             display: flex;
@@ -58,6 +65,12 @@
                     letter-spacing: 0.064px;
                 }
             }
+
+            label .error {
+                color: $main-color !important;
+            }
+
+
 
             input {
                 width: 100%;

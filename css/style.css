@@ -413,6 +413,10 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.13915);
     border-radius: 21px; }
+    .oplata .oplataform .input-block.error input {
+      border: 1px solid red !important;
+      box-shadow: 0 0 8px red !important;
+      outline: none; }
     .oplata .oplataform .input-group {
       text-align: center;
       display: flex;
@@ -425,6 +429,8 @@ body {
         line-height: 18px;
         text-align: center;
         letter-spacing: 0.064px; }
+      .oplata .oplataform .input-group label .error {
+        color: #EF2221 !important; }
       .oplata .oplataform .input-group input {
         width: 100%;
         padding: 17px 0;
@@ -612,11 +618,11 @@ body {
 .navbar {
   position: fixed !important;
   width: 100%;
-  transition: 0.3s ease-in-out; }
+  transition: 0.1s ease-in-out; }
 
 .fade-color {
   background-color: white !important;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
   border-bottom: 1px solid #D8D8D8; }
 
 nav {

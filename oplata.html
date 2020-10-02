@@ -65,22 +65,22 @@
                     <p>После нажатия кнопки оплатить вы будете перенаправлены на страницу оплаты</p>
                 </div>
                 <div class="col-lg-6 oplate--form">
-                    <form class="oplataform">
+                    <form class="oplataform" id="oplataform">
                         <div class="input-group">
                             <label for="iin">
                                 <h2>Ваш ИИН:</h2>
                             </label>
-                            <input type="text" placeholder="Вводить сюда" id="iin" name="iin" required />
+                            <input type="number" placeholder="Вводить сюда" id="iin" name="iin" />
                         </div>
                         <div class="input-group">
                             <label for="summa">
                                 <h2>Сумма платежа:</h2>
                             </label>
-                            <input type="summa" id="summa" name="summa" placeholder="Вводить сюда" required />
+                            <input type="number" id="summa" name="summa" placeholder="Вводить сюда" />
                         </div>
 
                         <div class="buttonForm">
-                            <button class=" oplataform--button">Внести оплату</button>
+                            <button type='submit' class=" oplataform--button">Внести оплату</button>
                         </div>
                     </form>
                 </div>
@@ -154,6 +154,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
     <script src="script.js">
     </script>
 </body>
