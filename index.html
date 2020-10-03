@@ -79,7 +79,7 @@
                     <div class="progress-bars col-md-4">
                         <div id="money" class="money">
                             <div class="money-progress" id="money-progress">
-                                <div id="draggable-point" style="left:4%;position:absolute;"
+                                <div id="draggable-point" style="left:0%;position:absolute;"
                                     class="draggable ui-widget-content">
                                     <div id="money-progress-handle"></div>
                                 </div>
@@ -94,7 +94,7 @@
                         </div>
                         <div id="day" class="day">
                             <div class="money-progress" id="day-progress">
-                                <div id="draggable-point2" style="left:4%;position:absolute;"
+                                <div id="draggable-point2" style="left:0%;position:absolute;"
                                     class="draggable ui-widget-content">
                                     <div id="money-progress-handle"></div>
                                 </div>
@@ -119,20 +119,21 @@
                             <div class="secondary-info--texts">
                                 <div class="box">
                                     <p class="text-center">Основной долг</p>
-                                    <p class="d-inline-block red center-line">19 000 </p><b> 10
-                                        000тг</b>
+                                    <p class="d-inline-block red center-line">19 000 </p><b id="osnovnoi-dolg"> &nbsp;
+                                        &nbsp; 11
+                                        500тг</b>
 
 
                                 </div>
                                 <div class="box">
                                     <p class="text-center">Страхование </p>
-                                    <p class="d-inline-block red center-line">9 000 </p><b> 1
+                                    <p class="d-inline-block red center-line">9 000 </p><b id="str">&nbsp; &nbsp; 1
                                         500тг</b>
                                 </div>
 
                                 <div class="box">
                                     <p class="text-center">Вознаграждение</p>
-                                    <p class="d-inline-block red center-line">9 000 </p><b> 1
+                                    <p class="d-inline-block red center-line">9 000 </p><b id="vozn">&nbsp; &nbsp; 1
                                         500тг</b>
                                 </div>
                             </div>
@@ -466,11 +467,17 @@
                     .parent()
                     .css(
                         "width"))));
+
                 var money = (125000 * value / 100) + 10000;
                 var xPos = (100 * parseInt($(this).css("left"))) / (parseInt($(this).parent()
                     .css(
                         "width"))) + "%";
+                var osnovnoiDolg = Math.floor(money * 1.15);
+                var strahovka = (osnovnoiDolg - money);
                 $("#summa").text(money);
+                $("#osnovnoi-dolg").text(" " + osnovnoiDolg + "тг");
+                $("#str").text(" " + strahovka + "тг");
+                $("#vozn").text(" " + strahovka + "тг");
                 $("#vozvrat").text(Math.floor(money * (1 + (dnei / 100) * 2)));
                 $('#money-progress-bar').css({
                     'width': xPos
@@ -496,7 +503,12 @@
                     .css(
                         "width"))) + "%";
                 console.log(xPos);
+                var osnovnoiDolg = (money * 1.15);
+                var strahovka = (osnovnoiDolg - money);
                 $("#dnei").text(day);
+                $("#osnovnoi-dolg").text(" " + osnovnoiDolg + "тг");
+                $("#str").text(" " + strahovka + "тг");
+                $("#vozn").text(" " + strahovka + "тг");
                 $("#vozvrat").text(Math.floor(money * (1 + (day / 100) * 2)));
                 $('#day-progress-bar').css({
                     'width': xPos
