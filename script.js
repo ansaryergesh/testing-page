@@ -20,19 +20,21 @@ $("#oplataform").validate({
       iin: {
         required: true,
 		number: true,
-		minlength: 12
+    minlength: 12,
+    maxlength: 12
 		
       },
       summa: {
 		required: true,
 		number: true,
-		minlength: 5,
+		minlength: 3,
         },
       },
     messages: {
       iin: {
         required: "Поле ИИН обязательно для заполнения",
-        minlength: jQuery.validator.format("Длина имени должна быть 12-ти число")
+        minlength: jQuery.validator.format("Длина ИИН должна быть 12-ти число"),
+        maxlength: jQuery.validator.format("Длина ИИН должна быть 12-ти число")
       },
       summa: {
         required: "Поле Сумма обязательно для заполнения",

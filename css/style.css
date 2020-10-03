@@ -580,6 +580,9 @@ body {
   transition: .5s ease-in-out;
   cursor: pointer; }
 
+.primary {
+  margin-top: 250px !important; }
+
 .headerContent {
   padding-top: 105px; }
 
@@ -879,7 +882,7 @@ main {
 .bottom-banner--text {
   margin: 70px 0; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 948px) {
   .fade-color {
     display: none !important; }
   .navbar {
