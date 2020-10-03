@@ -18,6 +18,9 @@ i {
 p {
   font-family: "AvenirNext" !important; }
 
+.hidden {
+  display: none; }
+
 a {
   color: black !important;
   text-decoration: none;
@@ -231,7 +234,7 @@ body {
 
 .draggable {
   float: left;
-  margin: 0 10px 10px 0; }
+  margin: 0 15px 10px 0px; }
 
 .otherPages {
   margin-top: 115px; }
@@ -877,8 +880,13 @@ main {
   margin: 70px 0; }
 
 @media only screen and (max-width: 768px) {
-  nav {
-    background-color: white; }
+  .fade-color {
+    display: none !important; }
+  .navbar {
+    background-color: white !important;
+    position: fixed !important;
+    width: 100%;
+    transition: 0.1s ease-in-out; }
   .advantages {
     margin-top: 55px;
     display: flex;

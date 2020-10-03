@@ -469,8 +469,15 @@ main {
 
 // Media queries
 @media only screen and (max-width: 768px) {
-    nav {
-        background-color: white;
+    .fade-color {
+        display: none !important
+    }
+
+    .navbar {
+        background-color: white !important;
+        position: fixed !important;
+        width: 100%;
+        transition: 0.1s ease-in-out;
     }
 
     .advantages {
